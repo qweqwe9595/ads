@@ -38,13 +38,13 @@ function TestEnviroment() {
 }
 
 const App = () => (
-  // <HashRouter>
-  //   <Routes>
-  //     <Route path="/" element={<TestEnviroment />}></Route>
-  //     {/* <Route path="/" element={<Layout />}></Route> */}
-  //   </Routes>
-  // </HashRouter>
-  <Layout></Layout>
+  <HashRouter>
+    <Routes>
+      <Route path="/" element={<TestEnviroment />}></Route>
+      {/* <Route path="/" element={<Layout />}></Route> */}
+    </Routes>
+  </HashRouter>
+  // <Layout></Layout>
 );
 
 ReactDOM.render(<App/>,document.getElementById('app'));
